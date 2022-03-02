@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async, defer и динамические скрипты</title>
+</head>
+<body>
+    <!-- Скрипты в defer никогда не блокируют страницу, и позволяет дальше строить дом структуру. Скрипты с defer выполняются когда документ будет готов -->
+    <script defer src="main.js"></script>
+
+    <!-- Скрипты с asyns не должны зависить от дом структуру и он загрузился и сразу выполнился. Грузится в фоновом режиме -->
+    <!-- <script async src="test.js"></script> -->
+
+    <p>Hello wrold</p>
+    <p>Second message</p>
+</body>
+</html>
